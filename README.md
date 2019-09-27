@@ -39,3 +39,5 @@ Monitor IPL time
 Monitor everything
 
  
+ 
+ Or just check out http://104.198.173.201:8080/cgi-bin/cms?load
