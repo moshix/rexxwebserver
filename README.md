@@ -41,3 +41,33 @@ Monitor everything
  
  
  Or just check out http://104.198.173.201:8080/cgi-bin/cms?load
+ 
+ How to install and operate
+ ==========================
+ 
+ 1. create a G-permissioned guest machine for your z/VM
+ -give it like 64MB of RAM
+ -30 cyls 191 minidisk
+ -link to the 592 TCPIP minidks
+ 
+ 2. format the 191 minidisk with any volume label you like
+ 
+ 3. copy the vmarc utility to the minidisk and your basic PROFILE EXEC to access the TCPIP 592 disk as B
+ 
+ 4. upload the VMARC archive in this repository to the 191 minidisk by FTP or terminal file transfer or smoke signal protocol
+ 
+ 5. vmarc unpk webserve vmarc a  (this will unpack the archive)
+ 
+ 6. change the included sample INDEX HTML to your heart' content
+ 
+ 7. start the webserver with HTTPD, voila' 
+ 
+ 8. you can test it by going to the IP of your z/VM and port 8080 like so: http://1.1.1.1:8080/
+ 
+ Change port as you wish
+ 
+ have fun!
+ 
+ moshix
+ 
+ 
